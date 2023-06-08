@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Assignment -49-52
+
+    <h2>Signup Form</h2>
+    <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name1" name="name" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+      <input type="text" id="dob1" dob="dob" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email1" name="email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password1" name="password" maxlength="6" required><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+    <h3>Submitted Info</h3>
+    <div id="submittedData"></div>
+
+
+    <h2>Item Details</h2>
+      <div class="item">
+          <h3>Item 1</h3>
+          <p>Short description of Item 1.</p>
+          <button onclick="showDetails(this)">Read more</button>
+          <div class="details" style="display: none;">
+              <p>Full details of Item.</p>
+              <p>Additional information about Item.</p>
+          </div>
+      </div>
+
+      
+  <h2>Student Details</h2>
+  <form id="studentForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br><br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br><br>
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" name="grade" required>
+    <br><br>
+    <input type="submit" value="Add Student">
+  </form>
+
+  <br><br>
+
+  <table id="studentTable">
+    <thead>
+      <tr>
+        <th style="padding: 40px;">Name</th>
+        <th style="padding: 40px;">Age</th>
+        <th style="padding: 40px;">Grade</th>
+        <th style="padding: 40px;">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+   <form id="editForm" style="display: none;">
+    <input type="hidden" id="editIndex" name="editIndex">
+    <label for="editName">Name:</label>
+    <input type="text" id="editName" name="editName" required>
+    <br><br>
+    <label for="editAge">Age:</label>
+    <input type="number" id="editAge" name="editAge" required>
+    <br><br>
+    <label for="editGrade">Grade:</label>
+    <input type="text" id="editGrade" name="editGrade" required>
+    <br><br>
+    <input type="submit" value="Update Student">
+    <input type="button" value="Cancel" onclick="cancelEdit()">
+  </form>
+
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>  
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Details</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table td, table th {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>-->
+
+  
+
+  
+
+  

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Assignment -43-48 
+<h3>Link Click</h3>
+<a href="#" onclick="AlertIs()">Click Me</a>
+
+<h3>Phone lookup</h3>
+
+<img src="https://images.priceoye.pk/apple-iphone-13-pro-max-pakistan-priceoye-qgwvt.jpg" width="200px" height="50%" 
+onclick="alertt('You clicked it')">
+
+<img src="https://images.priceoye.pk/samsung-galaxy-a73-pakistan-priceoye-1y28r.jpg" width="200px" height="50%"
+onclick="alertt('You clicked it')">
+
+<img src="https://images.priceoye.pk/huawei-p40-pro-pakistan-priceoye-nt8wz.jpg" width="200px" height="50%"
+onclick="alertt('You clicked it')">
+
+<img src="https://images.priceoye.pk/oppo-reno-4-pro-pakistan-priceoye-oa0hp.jpg" width="200px" height="50%"
+onclick="alertt('You clicked it')">
+
+
+<h3>Student Records</h3>
+<table id="studentTable">
+    <tr>
+      <th>Index</th>
+      <th>Name</th>
+      <th>Class</th>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Jhone</td>
+      <td>10</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Doe</td>
+      <td>9</td>
+      <td><button onclick="deleteRow(this)">Delete</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Mark</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+    <tr>
+        <td>3</td>
+        <td>James</td>
+        <td>8</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>  
+    </table>
+
+
+    <h3>Image Change on Mouseover</h3>
+     <img id='menuImg' src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTzJZlB0oX8mMUfx3LBwu-54hsaVC_pOTHwg&usqp=CAU" 
+     onmouseover="hover(this)" onmouseout="picc1(this)" width="50%" height="200px" />
+
+
+     <h3>Counter: <span id="counter"></span></h3>
+     <button onclick="increaseVal()">Increase</button>
+     <button onclick="decreaseVal()">Decrease</button>
+
+     
+    <script src="./app.js">
+    </script>
+</body>
+</html>

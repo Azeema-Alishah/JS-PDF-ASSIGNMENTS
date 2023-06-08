@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+<style> 
+   .modal {
+            background-color: rgb(248, 244, 239);
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        .modal-content {
+            width: 50%;
+            margin: auto;
+            display: block;
+        }
+        .close {
+            color: black;
+            float: right;
+            font-size: 60px;
+            cursor: pointer;
+            align-items: center;
+        }
+</style>
+
+    Assignment -53-57 
+    
+    <h3>Modal Images</h3>
+    <div class="imgs">
+        <img src="https://img.atlasobscura.com/qW0PSe4hwOJWtOCPKgDlPxafCoaZt0n7aEhu4Nn9FSg/rs:fill:600:400:1/g:ce/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy81ZDUx/NTZmNC1iYWJhLTRi/MWEtYWVmYi0wYzBk/YzkzODU1OWFhMDk3/NTBhMGI2M2Q1NjQ2/ZmNfdG9tYjEuanBn.jpg"
+        width="300px" style="cursor: pointer;"  alt="Image 1" onclick="openModal(this)">
+
+        <img src="https://media.traveler.es/photos/613769d8cb06ad0f20e122d1/master/w_1600%2Cc_limit/147120.jpg"
+        width="300px" style="cursor: pointer;" alt="Image 2" onclick="openModal(this)">
+
+        <img src="https://admin.umt.edu.pk/Media/Site/oin/FileManager/Minar%20e%20Pakistan%20(600%20x%20400).jpg"
+        width="300px" style="cursor: pointer;" alt="Image 3" onclick="openModal(this)">
+
+        <img src="https://lp-cms-production.imgix.net/2019-06/0f58350048b1b544393b5651242e7eb5-shah-faisal-mosque.jpg"
+        width="300px" style="cursor: pointer;" alt="Image 4" onclick="openModal(this)">
+    </div>
+
+    <div id="MyModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modall" class="modal-content">
+    </div>
+
+
+    <h3>Font Size Zoom</h3>
+    <p id="myParagraph">Lorem ipsum dolor sit amet</p>
+    <button id="zoomIn">Zoom In</button>
+    <button id="zoomOut">Zoom Out</button>
+
+    <script src="./app.js">
+    </script>
+</body>
+</html>
